@@ -1,18 +1,19 @@
 
-    <% if flash[:notice] %>
+<% if flash[:notice] %>
   <div class="notification is-danger">
-    <p class="notice"><%= notice %></p>
+    <p class="notice"><font color="green"><%= notice %></font></p>
   </div>
 <% end %>
+
 <div class="col-md-8 offset-md-2">
   <div class="text-center">
-<h1>welcome to <i class="fas fa-book"></i>Bookers!!</h1><br>
-<p>In <i class="fas fa-book"></i>Bookers,<br></p>
-you can share and exchange your opinions , inpressions , and emotions<br>
-about various books!<br>
-<div class="form_group pt-2 pb-2">
-<%= link_to 'Log in', new_user_session_path, class: "btn btn-primary w-25" %><br>
-</div>
-<%= link_to 'Sign up', new_user_registration_path, class: "btn btn-success w-25" %>
-</div>
+    <h1>welcome to <i class="fas fa-book"></i>Bookers!!</h1><br>
+      <p>In <i class="fas fa-book"></i>Bookers,<br></p>
+         you can share and exchange your opinions , inpressions , and emotions<br>
+         about various books!<br>
+      <div class="form_group pt-2 pb-2">
+        <%= link_to 'Log in', new_user_session_path, class: "btn btn-primary w-25" %><br>
+      </div>
+    <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-success w-25" %>
+  </div>
 </div>
